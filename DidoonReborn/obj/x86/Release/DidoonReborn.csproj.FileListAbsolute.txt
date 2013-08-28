@@ -1,0 +1,8 @@
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\bin\Release\DidoonReborn.exe
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\bin\Release\DidoonReborn.pdb
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\DidoonReborn.Properties.Resources.resources
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\DidoonReborn.exe
+C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\DidoonReborn.pdb
