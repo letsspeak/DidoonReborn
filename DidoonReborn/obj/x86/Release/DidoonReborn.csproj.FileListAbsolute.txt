@@ -6,3 +6,5 @@ C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary P
 C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\DidoonReborn.exe
 C:\Documents and Settings\Eveningsun\Local Settings\Application Data\Temporary Projects\DidoonReborn\obj\x86\Release\DidoonReborn.pdb
+C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\obj\x86\Release\DidoonReborn.exe
+C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\obj\x86\Release\DidoonReborn.pdb
