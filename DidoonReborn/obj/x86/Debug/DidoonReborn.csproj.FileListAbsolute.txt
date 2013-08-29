@@ -14,3 +14,4 @@ C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\Di
 C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\obj\x86\Debug\DidoonReborn.pdb
 C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\bin\Debug\DidoonReborn.exe
 C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\bin\Debug\DidoonReborn.pdb
+C:\Documents and Settings\Eveningsun\My Documents\Visual Studio 2010\Projects\DidoonReborn\DidoonReborn\obj\x86\Debug\DidoonReborn.Form1.resources

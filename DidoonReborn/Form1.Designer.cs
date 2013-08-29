@@ -2,16 +2,10 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using System.Diagnostics;
-
-using System.Runtime.InteropServices;
-using System.Text;
-
 namespace DidoonReborn
 {
     partial class Form1
     {
-        Button button;
 
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -39,91 +33,49 @@ namespace DidoonReborn
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.controlButton = new System.Windows.Forms.Button();
+            this.statusLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // controlButton
+            // 
+            this.controlButton.Location = new System.Drawing.Point(12, 62);
+            this.controlButton.Name = "controlButton";
+            this.controlButton.Size = new System.Drawing.Size(131, 58);
+            this.controlButton.TabIndex = 0;
+            this.controlButton.Text = "Start";
+            this.controlButton.UseVisualStyleBackColor = true;
+            this.controlButton.Click += new System.EventHandler(this.controlButton_Click);
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AccessibleName = "";
+            this.statusLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.statusLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.statusLabel.Location = new System.Drawing.Point(12, 9);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(131, 35);
+            this.statusLabel.TabIndex = 2;
+            this.statusLabel.Text = "label1";
+            this.statusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(162, 134);
+            this.Controls.Add(this.statusLabel);
+            this.Controls.Add(this.controlButton);
+            this.Name = "Form1";
             this.Text = "DidoonBorn - beta";
-
-
-            button = new Button()
-            {
-                Text = "Start",
-                Location = new Point(10, 10),
-                Size = new Size(160, 40),
-            };
-            button.Click += new EventHandler(button_Click);
-            this.Controls.Add(button);
+            this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        [StructLayout(LayoutKind.Sequential, Pack = 4)]
-        private struct RECT
-        {
-            public int left;
-            public int top;
-            public int right;
-            public int bottom;
-        }
-
-        [DllImport("user32.dll")]
-        static extern int GetWindowRect(IntPtr hWnd, out RECT rect);
-
-        [DllImport("user32.dll", SetLastError = true)]
-        static extern
-            int GetWindowText(IntPtr hWnd, StringBuilder lpFilename, int nSize);
-
-        void button_Click(object sender, EventArgs e)
-        {
-            // Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
-            Debug.WriteLine("Form1.button_Click");
-
-            if (isFF14LauncherBooted() == false)
-            {
-                button.Text = "Stop";
-                Process.Start(@"D:\Program Files\SquareEnix\FINAL FANTASY XIV - A Realm Reborn\boot\ffxivboot.exe");
-            }
-
-        }
-
-        bool isFF14LauncherBooted()
-        {
-            foreach (Process process in Process.GetProcesses())
-            {
-                // Debug.WriteLine("process.name:" + process.ProcessName);
-                if (process.ProcessName != "ffxivlauncher") continue;
-
-                IntPtr windowHandle = process.MainWindowHandle;
-                if (windowHandle == IntPtr.Zero) continue;
-
-                // StringBuilder exePath = new StringBuilder(1024);
-                // int exePathLen = GetWindowText(windowHandle, exePath, exePath.Capacity);
-                // Debug.WriteLine("windowText:" + exePath);
-
-                RECT rect = new RECT();
-                GetWindowRect(windowHandle, out rect);
-                // Debug.WriteLine("windowRect:(" + rect.left + ", " + rect.top + ", " + rect.right + ", " + rect.bottom + ")");
-
-                Size size = new Size(rect.right - rect.left, rect.bottom - rect.top);
-                Debug.WriteLine("size:" + size);
-
-                if (size.Width == 1024 && size.Height == 604)
-                {
-                    Debug.WriteLine("Lancher did booted.");
-                    return true;
-                }
-            }
-            return false;
-        }
-
-
-
-
-
-
-
-
-
+        private Button controlButton;
+        private Label statusLabel;
     }
 }
 
